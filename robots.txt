@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://unique101dhanori.com/sitemap.xml
