@@ -8,7 +8,7 @@ function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
 /* ---------- loader ---------- */
 var L=document.getElementById('loader');
 function finish(){H.classList.add('loaded');setTimeout(checkReveal,350);setTimeout(function(){H.classList.add('done')},1500)}
-if(L&&!RM){
+if(L&&!RM&&!H.classList.contains('seen')){
   var pct=L.querySelector('.pct'),bar=L.querySelector('.bar i'),shown=0,target=70,t0=performance.now(),min=+(L.getAttribute('data-min')||1900),ready=false;
   window.addEventListener('load',function(){ready=true});
   if(document.readyState==='complete')ready=true;
