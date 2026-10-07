@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (intent === 'whatsapp') {
         /* UQE101: greeting requested by the owner, then the form details. */
         var message =
-          'Hello Maik ji,\n\n' +
+          'Hello Manik ji,\n\n' +
           'I would like to enquire about ' + (detail.project || 'UQE101, Dhanori, Pune') + '.\n\n' +
           'Name: ' + (detail.name || '') + '\n' +
           'Mobile: ' + (detail.phone || '') + '\n' +
