@@ -1,7 +1,7 @@
 /**
  * ==========================================================
  * CONFIG.JS
- * UQE101 by Unique Properties — Dhanori, Pune
+ * QUE101 by Unique Properties — Dhanori, Pune
  *
  * Central place for all environment / service credentials.
  * form.js reads everything it needs from window.SITE_CONFIG
@@ -27,7 +27,7 @@ window.SITE_CONFIG = {
   SUPABASE_TABLE: "enquiries",
 
   /* Default project label saved with every enquiry row */
-  PROJECT_NAME: "UQE101, Dhanori, Pune",
+  PROJECT_NAME: "QUE101, Dhanori, Pune",
 
   /* Default Relationship Manager assigned to every enquiry.
      Change these two values to reassign — index.js fills every

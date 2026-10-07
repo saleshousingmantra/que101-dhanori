@@ -1,4 +1,4 @@
-/* UQE101 gallery: category filters + full-screen image viewer
+/* QUE101 gallery: category filters + full-screen image viewer
    (keyboard arrows / Esc, swipe on phones). */
 (function () {
   "use strict";

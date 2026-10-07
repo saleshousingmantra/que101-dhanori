@@ -1,7 +1,7 @@
 /**
  * ==========================================================
  * FORM.JS
- * UQE101 by Unique Properties — Dhanori, Pune
+ * QUE101 by Unique Properties — Dhanori, Pune
  *
  * Handles:
  *  - Saving enquiries to Supabase over its REST API
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const SUPABASE_ANON_KEY = CONFIG.SUPABASE_ANON_KEY;
     const EMAIL_SERVICE_URL = CONFIG.EMAIL_SERVICE_URL;
     const SUPABASE_TABLE = CONFIG.SUPABASE_TABLE || "enquiries";
-    const DEFAULT_PROJECT_NAME = CONFIG.PROJECT_NAME || "UQE101, Dhanori, Pune";
+    const DEFAULT_PROJECT_NAME = CONFIG.PROJECT_NAME || "QUE101, Dhanori, Pune";
 
     /* Shown to visitors whenever an enquiry can't be saved. The
        technical reason is logged to the console, never shown. */

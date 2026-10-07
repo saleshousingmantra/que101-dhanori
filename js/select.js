@@ -1,4 +1,4 @@
-/* UQE101 custom dropdown.
+/* QUE101 custom dropdown.
    Upgrades every <select data-custom> into a styled, accessible listbox.
    The real <select> stays in the form (visually hidden), so form.js keeps
    reading its value, validation and "required" logic are unchanged, and

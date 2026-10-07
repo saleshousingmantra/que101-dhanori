@@ -1,4 +1,4 @@
-/* UQE101 loader, scroll reveal and page-transition effects (moved out of index.html) */
+/* QUE101 loader, scroll reveal and page-transition effects (moved out of index.html) */
 (function(){
 var H=document.documentElement,RM=matchMedia('(prefers-reduced-motion: reduce)').matches,FINE=matchMedia('(hover:hover) and (pointer:fine)').matches;
 H.classList.add('js');

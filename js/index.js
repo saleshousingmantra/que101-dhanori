@@ -1,4 +1,4 @@
-/* UQE101: the page-load progress bar that used to sit here is
+/* QUE101: the page-load progress bar that used to sit here is
    replaced by the site's own loader (fx script), so it is removed. */
 
 /* Lead-source capture (first-touch attribution + form-field fill) now
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* UQE101: in-page smooth scrolling is handled by the site's own
+  /* QUE101: in-page smooth scrolling is handled by the site's own
      smooth-scroll (Lenis) in the fx script, so it is not repeated here. */
 
   /* Back-to-top button */
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var INTENT_COPY = {
     enquire: {
-      title: 'Enquire about UQE101',
+      title: 'Enquire about QUE101',
       sub: 'Share your details and our team will call you with pre-launch pricing and floor plans.',
       submit: 'Send enquiry'
     },
@@ -211,10 +211,10 @@ document.addEventListener('DOMContentLoaded', function () {
       var detail = e.detail || {};
 
       if (intent === 'whatsapp') {
-        /* UQE101: greeting requested by the owner, then the form details. */
+        /* QUE101: greeting requested by the owner, then the form details. */
         var message =
           'Hello Manik ji,\n\n' +
-          'I would like to enquire about ' + (detail.project || 'UQE101, Dhanori, Pune') + '.\n\n' +
+          'I would like to enquire about ' + (detail.project || 'QUE101, Dhanori, Pune') + '.\n\n' +
           'Name: ' + (detail.name || '') + '\n' +
           'Mobile: ' + (detail.phone || '') + '\n' +
           'Email: ' + (detail.email || '') + '\n' +
@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', function () {
     img.addEventListener('error', done, { once: true });
   });
 
-  /* UQE101: scroll-reveal and the hero carousel are handled by the
+  /* QUE101: scroll-reveal and the hero carousel are handled by the
      site's own fx script (random reveals + arch slideshow), so the
      generic versions from the template are removed here. */
 

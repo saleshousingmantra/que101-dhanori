@@ -1,4 +1,4 @@
-/* UQE101 landing page styles (moved out of index.html) */
+/* QUE101 landing page styles (moved out of index.html) */
 :root{--bg:#0A0806;--bg2:#100C08;--surface:#15100B;--surface2:#1C150E;--ink:#F3EBDC;--muted:#A79A82;--green:#0A0806;--on-green:#F4ECDD;--brass:#D4AF5A;--brass2:#F3DC9A;--brass3:#8E6E2C;--line:rgba(212,175,90,.18);--line2:rgba(212,175,90,.38);
 --ease:cubic-bezier(.16,1,.3,1);--ease2:cubic-bezier(.65,0,.35,1);--r:22px;color-scheme:dark;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
