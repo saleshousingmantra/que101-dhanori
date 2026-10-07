@@ -587,18 +587,6 @@ form.enq .btn:disabled::before,form.enq .btn:disabled::after{display:none}
 .ty-mark path{stroke-dasharray:50;stroke-dashoffset:50;animation:draw .8s var(--ease) 1.9s forwards}
 @media(max-width:760px){.modal{padding:22px 18px;border-radius:20px}.modal h2{font-size:22px}}
 
-/* ---------- footer: popular searches (keyword links to the homepage) ---------- */
-.ft-kw{padding:30px 0 26px;border-top:1px solid var(--line)}
-.ft-kw h3{font:600 12px Figtree,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin:0 0 16px}
-.ft-kw-row{display:grid;grid-template-columns:130px 1fr;gap:6px 18px;padding:7px 0}
-.ft-kw-label{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-top:2px}
-.ft-kw ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 0}
-.ft-kw li{font-size:13px;line-height:1.6;color:var(--muted)}
-.ft-kw li:not(:last-child)::after{content:"\00B7";margin:0 9px;color:var(--line)}
-.ft-kw a{color:var(--muted);text-decoration:none;transition:color .3s}
-.ft-kw a:hover{color:var(--brass2)}
-@media (max-width:720px){.ft-kw-row{grid-template-columns:1fr;gap:4px}.ft-kw{padding:22px 0 18px}.ft-kw li{font-size:12.5px}}
-
 /* ---------- compact hero on phones ---------- */
 @media(max-width:760px){
   .hero{padding:78px 0 26px}
