@@ -160,3 +160,7 @@ $('a[href^="/"]').forEach(function(a){a.addEventListener('click',function(e){if(
   if(!L)return;e.preventDefault();var href=a.href;H.classList.remove('done');L.querySelector('.lc').style.display='none';requestAnimationFrame(function(){requestAnimationFrame(function(){H.classList.remove('loaded')})});setTimeout(function(){location.href=href},900)})});
 addEventListener('pageshow',function(e){if(e.persisted){H.classList.add('loaded','done');if(L)L.querySelector('.lc').style.display=''}});
 })();
+
+/* Opened straight from disk (file://)? Folder links like "blog/x/" don't
+   auto-open index.html there, so point them at the file directly. */
+(function(){if(location.protocol!=='file:')return;document.querySelectorAll('a[href]').forEach(function(a){var h=a.getAttribute('href');if(/^([a-z]+:|#|\/\/)/i.test(h))return;var m=h.match(/^([^#?]*)(.*)$/);if(m[1]&&/\/$/.test(m[1]))a.setAttribute('href',m[1]+'index.html'+m[2]);});})();
