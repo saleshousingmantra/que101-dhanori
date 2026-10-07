@@ -7,5 +7,22 @@
   "background_color": "#110D09",
   "theme_color": "#110D09",
   "lang": "en-IN",
-  "description": "UQE101 by Unique Properties: 12-acre gated community on Bharatmata Road, Dhanori, Pune. 12 towers, 50 row houses, 50+ amenities. 2 to 5 BHK from \u20b990 L. EOI open."
+  "description": "UQE101 by Unique Properties: 12-acre gated community on Bharatmata Road, Dhanori, Pune. 12 towers, 50 row houses, 50+ amenities. 2 to 5 BHK from ₹90 L. EOI open.",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
 }
