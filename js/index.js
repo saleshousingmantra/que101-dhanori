@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
        never open this popup at all — see the click handler below. */
   };
 
-  function openModal(plan, intent) {
+  function openModal(plan, intent, auto) {
     if (!modalOverlay) return;
 
     var activeIntent = intent || 'enquire';
@@ -136,7 +136,11 @@ document.addEventListener('DOMContentLoaded', function () {
     modalOverlay.classList.add('open');
     document.body.style.overflow = 'hidden';
     var firstField = document.getElementById('modal-name');
-    if (firstField) {
+    /* When the popup opens by itself on a phone, don't pop the keyboard
+       up over the form; focus the first field only on a deliberate open
+       or on devices with a mouse. */
+    var touch = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+    if (firstField && !(auto && touch)) {
       window.setTimeout(function () { firstField.focus(); }, 100);
     }
   }
@@ -241,15 +245,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* Auto-open the popup ONCE, 15 seconds after the page loads (or is
-     refreshed). It never re-opens by itself: if the visitor already
-     opened or closed it, or is typing in a form, it stays away. */
-  var AUTO_OPEN_DELAY_MS = 15000;
+  /* Auto-open the popup ONCE, 20 seconds after the page loads (or is
+     refreshed). It never re-opens by itself, and it stays away if the
+     visitor already opened it, is filling in a form, is using a dropdown,
+     or has the menu or gallery viewer open. */
+  var AUTO_OPEN_DELAY_MS = 20000;
   window.setTimeout(function () {
     var a = document.activeElement;
-    var typing = a && /^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName);
-    if (modalOverlay && !modalOverlay.classList.contains('open') && !typing) {
-      openModal();
+    var busy =
+      (a && (/^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName) || (a.closest && a.closest('form, .cs')))) ||
+      document.querySelector('.cs.open') ||
+      document.documentElement.classList.contains('menu-open') ||
+      document.documentElement.classList.contains('g-lock');
+    if (modalOverlay && !modalOverlay.classList.contains('open') && !busy) {
+      openModal(null, null, true);
     }
   }, AUTO_OPEN_DELAY_MS);
 

@@ -44,6 +44,7 @@
     list.id = listId;
     list.setAttribute("role", "listbox");
     list.tabIndex = -1;
+    list.setAttribute("data-lenis-prevent", ""); // smooth-scroll must not swallow list scrolling
     if (label) list.setAttribute("aria-labelledby", label.id);
     wrap.appendChild(list);
 

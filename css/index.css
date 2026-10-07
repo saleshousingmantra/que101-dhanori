@@ -701,3 +701,8 @@ html.g-lock,html.g-lock body{overflow:hidden}
 @keyframes unlock{to{overflow:visible}}
 html.js:not(.loaded):not(.seen) .hi{animation:hiShow .8s 4.2s forwards}
 html.js:not(.loaded):not(.seen) body{animation:unlock 0s 4s forwards}
+
+/* ---------- popup: vertical scroll on short screens ---------- */
+.modal-overlay{overscroll-behavior:contain;-webkit-overflow-scrolling:touch;align-items:start;padding:max(16px,env(safe-area-inset-top)) 16px max(24px,env(safe-area-inset-bottom))}
+.modal-overlay .modal{margin:auto 0}
+@supports (height:100dvh){.modal-overlay{height:100dvh}}
