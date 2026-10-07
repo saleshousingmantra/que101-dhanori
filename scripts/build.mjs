@@ -10,6 +10,7 @@ const SITE = [
   "blog",
   "css",
   "js",
+  "images",
   "og-image.jpg",
   "manifest.webmanifest",
   "robots.txt",
