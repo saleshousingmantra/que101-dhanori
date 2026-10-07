@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en-IN"><head><meta charset="utf-8">
-<script>/* mark JS on, and skip the intro loader after the first page of a visit */(function(d){d.classList.add("js");try{if(sessionStorage.getItem("uqe-seen"))d.classList.add("seen");sessionStorage.setItem("uqe-seen","1")}catch(e){}})(document.documentElement)</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Dhanori as a growing locality | UQE101 Dhanori</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<script>document.documentElement.classList.add("js")</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Dhanori as a growing locality | UQE101 Dhanori</title><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"><meta name="description" content="Dhanori is becoming one of Pune&#x27;s sought-after residential areas, with schools, hospitals, malls and offices all within reach.">
 <meta name="keywords" content="UQE101 Dhanori, flats in Dhanori Pune, 2 BHK Dhanori, 3 BHK Dhanori, row houses Dhanori, duplex Dhanori, Unique Properties Pune, Bharatmata Road Dhanori, new launch Dhanori, pre-launch EOI Pune">
@@ -71,28 +71,20 @@ h2 em,.serif{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font
 .btn.ghost::before{background:var(--brass)}.btn.ghost:hover{color:#140F09}
 .btn .arr{transition:transform .5s var(--ease)}.btn:hover .arr{transform:translateX(4px) rotate(-45deg)}
 
-/* loader */
-#loader{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;pointer-events:all}html:not(.js) #loader,html.seen #loader{display:none}
-#loader .cur{position:absolute;left:0;right:0;height:50.5%;background:#070504;transition:transform 1.1s var(--ease2)}
-#loader .cur.t{top:0}#loader .cur.b{bottom:0}
-#loader .lc{position:relative;z-index:2;text-align:center;transition:opacity .5s,transform .8s var(--ease2)}
-#loader svg{width:120px;height:120px;display:block;margin:0 auto 26px;overflow:visible}
-#loader svg circle,#loader svg path{fill:none;stroke:url(#lg);stroke-width:1.4;stroke-linecap:round}
-#loader .ring{stroke-dasharray:340;stroke-dashoffset:340;animation:draw 1.6s var(--ease) forwards}
-#loader .ray{stroke-dasharray:60;stroke-dashoffset:60;animation:draw 1.2s var(--ease) forwards}
+
+
+
+
 @keyframes draw{to{stroke-dashoffset:0}}
-#loader .spin{transform-origin:60px 60px;animation:spin 6s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-#loader .word{font:800 clamp(44px,9vw,92px)/1.05 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;display:flex;justify-content:center;overflow:hidden}
-#loader .word span{background:linear-gradient(180deg,var(--brass2),var(--brass) 60%,var(--brass3));-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block;transform:translateY(110%);animation:up .9s var(--ease) forwards}
+
 @keyframes up{to{transform:none}}
-#loader .meta{display:flex;justify-content:space-between;gap:40px;margin-top:22px;color:var(--muted);font:500 12px Figtree,sans-serif;letter-spacing:.24em;text-transform:uppercase}
-#loader .bar{height:1px;background:var(--line);margin-top:14px;overflow:hidden;width:min(320px,70vw);margin-left:auto;margin-right:auto}
-#loader .bar i{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--brass3),var(--brass2));transform-origin:left;transform:scaleX(0)}
-html.loaded #loader .lc{opacity:0;transform:translateY(-30px) scale(.96)}
-html.loaded #loader .cur.t{transform:translateY(-101%);transition-delay:.25s}
-html.loaded #loader .cur.b{transform:translateY(101%);transition-delay:.25s}
-html.done #loader{display:none}
+
+
+
+
+
+
 html.js:not(.loaded):not(.seen) body{overflow:hidden}
 
 /* cursor */
@@ -346,8 +338,7 @@ html.js [data-split]:not(.in) .sw>span{transform:translateY(110%) rotate(4deg)}
  html.js [data-split]:not(.in) .sw>span{transform:none!important}
  .hs{height:auto!important}.hs .pin{position:static!important;height:auto!important}
  .hs .photos{transform:none!important;width:auto!important;flex-wrap:wrap}
- .zoomfig{clip-path:none}.zoomfig img{transform:none}
- #loader{display:none}.hi{opacity:1;transform:none}.hero h1 .ch b{transform:none}
+ .zoomfig{clip-path:none}.zoomfig img{transform:none}.hi{opacity:1;transform:none}.hero h1 .ch b{transform:none}
 }
 
 /* blog article */
@@ -653,15 +644,14 @@ form.enq .btn:disabled::before,form.enq .btn:disabled::after{display:none}
 .art-fig figcaption{padding:10px 16px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
 @media(max-width:760px){.art-fig{margin-top:20px;border-radius:16px}}
 
-/* ---------- loader failsafe: if scripts never finish, reveal the page after 4s ---------- */
+/* ---------- failsafe: reveal hero text after 4s if scripts never finish ---------- */
 @keyframes ldrGone{to{opacity:0;visibility:hidden}}
 @keyframes hiShow{to{opacity:1;transform:none}}
 @keyframes unlock{to{overflow:visible}}
-html.js:not(.loaded) #loader{animation:ldrGone .5s 4s forwards}
 html.js:not(.loaded):not(.seen) .hi{animation:hiShow .8s 4.2s forwards}
 html.js:not(.loaded):not(.seen) body{animation:unlock 0s 4s forwards}
 </style></head><body>
-<div id="loader" aria-hidden="true" data-min="700"><div class="cur t"></div><div class="cur b"></div><div class="lc"><div class="word"><span style="animation-delay:.05s">U</span><span style="animation-delay:.1s">Q</span><span style="animation-delay:.15s">E</span><span style="animation-delay:.2s">1</span><span style="animation-delay:.25s">0</span><span style="animation-delay:.3s">1</span></div><div class="bar"><i></i></div></div></div><div class="progress" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
 <nav><div class="wrap"><a class="logo" href="../../" aria-label="UQE101 home"><i aria-hidden="true"></i>UQE101</a><div class="nl"><a class="keep" href="../../#blog"><span data-t="Blog">Blog</span></a></div><a class="btn ncall" href="tel:+917264011256">Call 7264011256</a><button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span class="mb-t">Menu</span><span class="mb-i" aria-hidden="true"><i></i><i></i></span></button></div></nav><div id="menu" class="menu" role="dialog" aria-modal="true" aria-label="Site menu"><div class="menu-bg" aria-hidden="true"></div><div class="wrap menu-in"><ul class="menu-l"><li><a href="../../"><span class="mi"><b>Home</b></span><em>01</em></a></li><li><a href="../../#configurations"><span class="mi"><b>Homes &amp; prices</b></span><em>02</em></a></li><li><a href="../../#floor-plans"><span class="mi"><b>Floor plans</b></span><em>03</em></a></li><li><a href="../../#amenities"><span class="mi"><b>Amenities</b></span><em>04</em></a></li><li><a href="../../#location"><span class="mi"><b>Location</b></span><em>05</em></a></li><li><a href="../../#blog"><span class="mi"><b>Guides</b></span><em>06</em></a></li><li><a href="../../#eoi"><span class="mi"><b>Register interest</b></span><em>07</em></a></li></ul><div class="menu-side"><p class="eyebrow">Talk to us</p><a class="menu-call" href="tel:+917264011256">7264011256</a><p><a class="btn" href="https://wa.me/917264011256?text=Hello%20Manik%20ji%2C%20I%20am%20interested%20in%20UQE101%20Dhanori." target="_blank" rel="noopener">WhatsApp us <span class="arr">→</span></a></p><p class="menu-addr">Survey No. 101, Bharatmata Road,<br>Dhanori, Pune</p><p><a class="ul" href="https://maps.app.goo.gl/fZU4rtoevVH9vMSR8" target="_blank" rel="noopener">Open in Google Maps</a></p><p class="menu-rera">MahaRERA PM1261012602127</p></div></div></div>
 <main class="art"><a class="back hi" href="../../#blog">Back to all guides</a><div class="cat hi" style="transition-delay:.2s" data-scramble>Neighbourhood</div><h1 data-split>Dhanori as a growing locality</h1><p class="lead" data-reveal="up">Dhanori is becoming one of Pune&#x27;s sought-after residential areas, with schools, hospitals, malls and offices all within reach.</p><figure class="art-fig" data-reveal="up"><img src="../../images/past-projects-2.jpg" alt="Unique Properties projects in Dhanori" loading="eager" decoding="async"><figcaption>Unique Properties projects in Dhanori. Images are indicative.</figcaption></figure><ul data-stagger="120"><li><b>Daily needs</b><span>Preschools, restaurants and a mall are within about 2 km.</span></li><li><b>Work</b><span>Viman Nagar, Yerawada and Kharadi IT parks are 8 to 12 km away.</span></li><li><b>Travel</b><span>Pune Airport is about 5.9 km from the site.</span></li><li><b>Builders</b><span>Unique Properties has already delivered several projects in Dhanori.</span></li></ul>
 <div class="cta2" data-reveal="tilt"><h2>See UQE101 for yourself</h2><p>12 acres in Dhanori, with homes from ₹90 L. The EOI window is open for pre-launch pricing.</p><div class="row"><a class="btn" href="tel:+917264011256">Call 7264011256</a><a class="btn ghost" href="../../#eoi">Register your interest</a></div></div></main>
