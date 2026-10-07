@@ -1,0 +1,13 @@
+{
+  "name": "que101-dhanori",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UQE101 by Unique Properties, Dhanori, Pune: static landing site",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "npm run build && npx --yes serve dist"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
