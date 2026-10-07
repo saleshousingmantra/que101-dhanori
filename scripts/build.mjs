@@ -6,6 +6,7 @@ const OUT = "dist";
 // Only these files and folders are published.
 const SITE = [
   "index.html",
+  "404.html",
   "thank-you",
   "blog",
   "css",
